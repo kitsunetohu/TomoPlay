@@ -22,7 +22,6 @@ public class CharacterSeparateMove : MonoBehaviour
 
     private SyncGameObject SyncGameObject;
 
-
     void Awake ()
 	{
 		animator = GetComponent<Animator> ();
@@ -32,10 +31,9 @@ public class CharacterSeparateMove : MonoBehaviour
     }
 
     float axisX, axisY;
-
+    
     void Update()
     {
-
         if (SyncGameObject.IsMine) { 
             axisX = Input.GetAxisRaw("Horizontal");
             axisY = Input.GetAxisRaw("Vertical");
