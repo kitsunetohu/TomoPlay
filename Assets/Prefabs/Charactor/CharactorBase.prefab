@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2596844964247161927}
   - component: {fileID: 1205480408}
   m_Layer: 8
-  m_Name: MyBase
+  m_Name: CharactorBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
