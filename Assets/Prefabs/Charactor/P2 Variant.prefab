@@ -102,13 +102,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1205480408, guid: 80a60e2622356a04d9b3d2b2426ca14f, type: 3}
-      propertyPath: characterHeightOffset
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 896508460260477988, guid: 80a60e2622356a04d9b3d2b2426ca14f,
-        type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205480408, guid: 80a60e2622356a04d9b3d2b2426ca14f, type: 3}
+      propertyPath: characterHeightOffset
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80a60e2622356a04d9b3d2b2426ca14f, type: 3}
