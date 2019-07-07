@@ -11,13 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScene.unity
     guid: 6b2db374041904d6fb526a726e09da5c
-  - enabled: 1
-    path: Assets/Scenes/Matching_T.unity
-    guid: f5ad75bcd93894895af9f46ce5c02287
-  - enabled: 1
-    path: Assets/Scenes/CONGXI 1.unity
-    guid: 31fa20a1dc8e24943a1de6e65db3f15c
-  - enabled: 1
-    path: Assets/UniP2P/Example/Tanks/Scenes/Tanks.unity
-    guid: 5a697b9dd83bf7345b8b3352d18fc003
   m_configObjects: {}
