@@ -11,13 +11,19 @@ public class UIManger : Manager<UIManger>
     public Image YukoSlot;
 
     [SerializeField]
-    string[] talk1;
+    public string[] talk1;
     [SerializeField]
-    string[] talk2;
+    public string[] talk2;
     [SerializeField]
-    string[] talk3;
+    public string[] talk3;
     [SerializeField]
-    string[] talk4;
+    public string[] talk4;
+    [SerializeField]
+    public string[] talk5;
+    [SerializeField]
+    public string[] talk6;
+    [SerializeField]
+    string[] talk7;
 
     string[] nowTalk;
     IEnumerator talksIenu;
@@ -30,11 +36,7 @@ public class UIManger : Manager<UIManger>
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return)&&(isTalking==false)){
-            Debug.Log("sd");
-            TalkStart(talk1);
-            
-        }
+
         if(isTalking){
             if(talkPanel.gameObject.activeSelf==false){
                 talkPanel.gameObject.SetActive(true);
@@ -62,6 +64,8 @@ public class UIManger : Manager<UIManger>
         isTalking=true;
         nowTalk=talks;
         talksIenu = nowTalk.GetEnumerator();
+        talksIenu.MoveNext();
+        UIManger.Instance.TalkUIUpdata(talksIenu.Current as string);
      
     }
 

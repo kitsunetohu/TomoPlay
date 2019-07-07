@@ -8,6 +8,8 @@ public class GameManger : Manager<GameManger>
     public bool userCanMove=true;
     public string lastScene;
     public string nowScene="TitleScene";
+
+    public int KeyNum=0;
     
     // Start is called before the first frame update
     void Start()
