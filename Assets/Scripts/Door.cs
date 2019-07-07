@@ -21,6 +21,7 @@ public class Door : MonoBehaviour
 
     void ChangeScene()
     {
+        GameManger.Instance.changeSceneTo(nextScene);
         Debug.Log("change Scene");
     }
 

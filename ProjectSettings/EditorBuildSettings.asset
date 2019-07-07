@@ -5,16 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOverScene.unity
     guid: fec781c823f8346d89ef647141622c25
   - enabled: 1
     path: Assets/Scenes/TitleScene.unity
     guid: 6b2db374041904d6fb526a726e09da5c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Matching_T.unity
     guid: f5ad75bcd93894895af9f46ce5c02287
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CONGXI 1.unity
     guid: 31fa20a1dc8e24943a1de6e65db3f15c
+  - enabled: 1
+    path: Assets/Scenes/CONGXI.unity
+    guid: ad02e6bc61eb894498fc951647f787ec
+  - enabled: 1
+    path: Assets/Scenes/CONGXIMap2.unity
+    guid: c9da4a9ff230eb34c9f33cc0a5c2728b
   m_configObjects: {}
