@@ -164,7 +164,7 @@ public class MatchingManager_T : MonoBehaviour
                 return;
             }
 #endif
-            CurrentMemberText.text = string.Format("Current Member {0}/5" + "\n"+ "Connected Peer: {1}", r.peers.Length,UniP2PManager.GetPeerConnectedCount());
+            CurrentMemberText.text = string.Format("Current Member {0}/2" + "\n"+ "Connected Peer: {1}", r.peers.Length,UniP2PManager.GetPeerConnectedCount());
             if (r.isclose)
             {
                 isWaiting = false;
