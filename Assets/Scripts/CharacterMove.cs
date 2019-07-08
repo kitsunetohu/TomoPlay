@@ -46,6 +46,9 @@ public class CharacterMove : MonoBehaviour
 		if(GameManger.Instance.userCanMove){
 			rig2d.velocity = velocity;
 		}
+		else{
+			rig2d.velocity = Vector3.zero;
+		}
 	
 		animator.SetFloat (hashSpeed, Mathf.Abs (velocity.magnitude));
 

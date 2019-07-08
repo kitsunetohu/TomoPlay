@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UIManger : Manager<UIManger>
 {
+
+
     bool isTalking=false;
     public Graphic talkPanel;
     public Image UnitySlot;
@@ -38,15 +40,12 @@ public class UIManger : Manager<UIManger>
     {
 
         if(isTalking){
-            if(talkPanel.gameObject.activeSelf==false){
-                talkPanel.gameObject.SetActive(true);
-            }
-             
+                talkPanel.gameObject.SetActive(true);             
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 if (talksIenu.MoveNext())
                 {//話はまだ終わっていない,UIに更新させて
-                GameManger.Instance.userCanMove=false;
+                
                     UIManger.Instance.TalkUIUpdata(talksIenu.Current as string);
                 }
                 else
@@ -63,6 +62,7 @@ public class UIManger : Manager<UIManger>
     {
         isTalking=true;
         nowTalk=talks;
+        GameManger.Instance.userCanMove=false;
         talksIenu = nowTalk.GetEnumerator();
         talksIenu.MoveNext();
         UIManger.Instance.TalkUIUpdata(talksIenu.Current as string);
